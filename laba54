@@ -3,9 +3,9 @@
 using namespace std;
 
 int main(){
-    int max, min, buff, indexMax = 0, indexMin = 0;
+    int buff, indexMax = 0, indexMin = 0;
     const int n = 20;
-    int array[n];
+    double array[n], max, min;
     for (int i = 0; i < n; i++)
     {
         cout << "a" << i << " = ";
