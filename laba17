@@ -1,0 +1,14 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	double sum = 0;
+	int  k = 1, tmp = 0;
+	while (k < 11)
+	{
+		sum += (1) / (pow(4,k) + pow(5, k+2));
+		k++;
+	}
+	cout << sum;
+}
