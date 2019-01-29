@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    int n, k = 0, max = 0;
+    int array[n];
+    cout << "n = ";
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "a" << i << " = ";
+        cin >> array[i];
+        if (array[i] % 2 != 0)
+        {
+            if (array[i] > max)
+            {
+                max = array[i];
+            }
+        }
+        else
+        {
+           k++;
+        }
+    }
+    if (max != 0)
+    {
+        cout << "Max = " << max << endl;
+    }
+    else
+    {
+        cout << "not to have" << endl;
+    }
+    cout << "K = " << k;
+}
