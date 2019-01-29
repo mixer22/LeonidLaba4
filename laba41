@@ -1,0 +1,35 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    double a;
+    int s1 = 0, s2 = 0, count = 0;
+    char ch;
+    do
+    {
+        cout << "a" << count << " = ";
+        cin >> a;
+        if (a < 0)
+        {
+            s1++;
+        }
+        else
+        {
+            s2++;
+        }
+        cout << "a" << count << " = " << a << endl;
+        count++;
+        cout << "stop ? (Y/N)" << endl;
+        cin >> ch;
+    }
+    while (ch != 'Y');
+    if (s1 > s2)
+    {
+        cout << "Yes";
+    }
+    else
+    {
+        cout << "No";
+    }
+}
