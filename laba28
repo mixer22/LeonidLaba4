@@ -1,0 +1,28 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    double a, s;
+    int count = 0;
+    char ch;
+    do
+    {
+        cout << "a" << count << " = ";
+        cin >> a;
+        if (a < 2)
+        {
+            a = 0;
+        }
+        if ((a >= 3)&&(a <= 7))
+        {
+            s += a;
+        }
+        cout << "a" << count << " = " << a << endl;
+        count++;
+        cout << "stop ? (Y/N)" << endl;
+        cin >> ch;
+    }
+    while (ch != 'Y');
+    cout << "S = " << s;
+}
