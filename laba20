@@ -15,11 +15,11 @@ int fact(int k)
 
 int main()
 {
-	double out = 1;
-	int  k = 1, tmp = 0, x = 0, i =0;
-
-	cout << "input X, i: ";
+	double out = 1, x = 0, i =0;
+	int k = 1;
+	cout << "X = ";
 	cin >> x;
+	cout << "I = ";
 	cin >> i;
 	while (k < 11)
 	{
