@@ -1,0 +1,33 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    const int n = 20;
+    double array[n], array2[n/2];
+    int count1 = 0, count2 = 0;
+    for (int i = 0; i < n; i++)
+    {
+        cout << "a" << i << " = ";
+        cin >> array[i];
+    }
+    for (int i = 0; i < n/2; i++)
+    {
+        if (i%2 == 0)
+        {
+            array2[i] = array[count1 + 11];
+            count1 += 2;
+            cout << array2[i] << endl;
+        }
+        else
+        {
+            array2[i] = array[count2 + 1];
+            count2 += 2;
+            cout << array2[i] << endl;
+        }
+    }
+    for (int i = 0; i < n/2; i++)
+    {
+        cout << "a" << i << " = " << array2[i] << " ";
+    }
+}
