@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    double a, k = 0;
+    int count = 0;
+    char ch;
+    do
+    {
+        cout << "a" << count << " = ";
+        cin >> a;
+        if (a > 7)
+        {
+            a = 7;
+            k++;
+        }
+        cout << "a" << count << " = " << a << endl;
+        count++;
+        cout << "stop ? (Y/N)" << endl;
+        cin >> ch;
+    }
+    while (ch != 'Y');
+    cout << "K = " << k;
+}
