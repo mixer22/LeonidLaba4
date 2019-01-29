@@ -1,0 +1,30 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main(){
+    const int n = 10;
+    int array[n], array2[n];
+    for (int i = 0; i < n; i++)
+    {
+        cout << "a" << i << " = ";
+        cin >> array[i];
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout << "b" << i << " = ";
+        cin >> array2[i];
+        if (array[i] <= 0)
+        {
+            array2[i] *= 10;
+        }
+        else
+        {
+            array2[i] = 0;
+        }
+    }
+    for (int i = 0; i < n; i++)
+    {
+        cout << "b" << i << " = " << array2[i] << " ";
+    }
+}
