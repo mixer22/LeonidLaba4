@@ -4,7 +4,8 @@ using namespace std;
 
 int main(){
     const int n = 20;
-    double *array = new double array[n], *array2 = new double array2[n/2];
+    double *array = new double[n];
+    double *array2 = new double[n/2];
     int count1 = 0, count2 = 0;
     for (int i = 0; i < n; i++)
     {
