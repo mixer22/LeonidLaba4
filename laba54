@@ -10,6 +10,10 @@ int main(){
     {
         cout << "a" << i << " = ";
         cin >> array[i];
+        if (i == 0)
+        {
+            min = max = array[0];
+        }
         if (array[i] > max)
         {
             max = array[i];
