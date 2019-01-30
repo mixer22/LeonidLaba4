@@ -6,7 +6,7 @@ int main(){
     int n;
     cout << "n = ";
     cin >> n;
-    double array[n];
+    double *array = new double array[n];
     for (int i = 0; i < n; i++)
     {
         cout << "a" << i << " = ";
