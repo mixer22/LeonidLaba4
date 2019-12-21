@@ -1,0 +1,208 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int fact(int k)
+{
+    int out = 1, i = 1;
+    while (i <= k)
+    {
+        out *= i;
+        i++;
+    }
+    return out;
+}
+
+int main() {
+
+    // 18 задание (Анна) 2 лаба
+
+    /*float x,y,F;
+    const float e = 2.7;
+    cout << "Введите x" << endl;
+    cin >> x;
+    cout << "Введите y" << endl;
+    cin >> y;
+    F = (3 + pow(e, y - 1))/1 + pow(x,2) * abs(y - tan(x));
+    cout << "F = " << F;*/
+
+    // 25 задание (Николай) 2 лаба
+
+    /*float r,v,h,F;
+    cout << "Введите r" << endl;
+    cin >> r;
+    cout << "Введите v" << endl;
+    cin >> v;
+    cout << "Введите h" << endl;
+    cin >> h;
+    F = (3.14f * pow(r,2) - (pow(v,2) * h) + ((v * h + 1)/v) + 3;
+    cout << "F = " << F;*/
+
+    // 21 задание (Анна) 3 лаба
+
+    /*double x,y,z,F;
+    const double e = 2.7;
+    cout << "Введите x" << endl;
+    cin >> x;
+    if (x > 6)
+    {
+        y = (pow(x,2) + 1)/(2 * sin(x/2));
+        z = pow(tan(x),2) * log(pow(x,2));
+    }
+    else if (x < 2)
+    {
+        y = 1/x + 2;
+        z = pow(sin(x), 3) - pow(cos(x), 3);
+    }
+    else
+    {
+       y = (pow(x + 1, 2) + 2.34)/pow(x + 1, 2);
+       z = pow(x/(2 * x - 3), 1.0 / 3);
+    }
+    F = pow(e, 2 + y + z);
+    cout << "F = " << F;*/
+
+    // 10 задание (Николай) 3 лаба
+
+    /*double x,y,z,F;
+    const double pi = 3.14, e = 2.7;
+    cout << "Введите x" << endl;
+    cin >> x;
+    if (x > 0)
+    {
+        y = (0.8 * x)/abs(sin(x)) + cos(x - pi/3);
+        z = (2 * x)/sqrt(pow(x,3)) - 1;
+    }
+    else
+    {
+        y = (-8 * x * sin(x))/pow(e, sqrt(abs(x)));
+        z = 8 / -x;
+    }
+    F = (3 * y + pow(x,2) * z)/pi;
+    cout << "F = " << F;*/
+
+    // 12 (Анна) 4 лаба
+
+    /*double x, F = 1;
+    cout << "Введите x" << endl;
+    cin >> x;
+    int k = 1;
+    while(k <= 9)
+    {
+        F *= (k - cos(abs(x)))/(fact(k) + 1);
+        k++;
+    }
+    cout << "F = " << F;*/
+
+    // 28 (Анна) 4 лаба
+
+    /*double a, s = 0;
+    int count = 0;
+    char ch;
+    do
+    {
+        cout << "a" << count << " = ";
+        cin >> a;
+        if (a < 2)
+        {
+            a = 0;
+        }
+        if ((a >= 3)&&(a <= 7))
+        {
+            s += a;
+        }
+        cout << "a" << count << " = " << a << endl;
+        count++;
+        cout << "stop ? (Y/N)" << endl;
+        cin >> ch;
+    }
+    while (ch != 'Y' && ch != 'y');
+    cout << "S = " << s;*/
+
+    // 51 (Анна) 4 лаба
+
+    /*int n;
+    double max, min;
+    cout << "n = ";
+    cin >> n;
+    double *array = new double[n];
+    max = pow(array[0],2);
+    min = pow(array[0],3);
+    for (int i = 0; i < n; i++)
+    {
+        cout << "a" << i << " = ";
+        cin >> array[i];
+        if (pow(array[i],2) > max)
+        {
+            max = pow(array[i],2);
+        }
+        if (pow(array[i],3) < min)
+        {
+            min = pow(array[i],3);
+        }
+    }
+    cout << "MAX a^2 = " << max << endl;
+    cout << "MIN a^3 = " << min << endl;*/
+
+    // 20 (Николай) 4 лаба
+
+    /*double x, i, F = 1;
+    cout << "Введите x" << endl;
+    cin >> x;
+    cout << "Введите i" << endl;
+    cin >> i;
+    int k = 1;
+    while(k <= 10)
+    {
+        F *= (x * tan(x) + pow(i,2))/fact(k);
+        k++;
+    }
+    cout << "F = " << F;*/
+
+    // 36 (Николай) лаба
+
+    /*int a, s1 = 0, s2 = 0;
+    int count = 0;
+    char ch;
+    do
+    {
+        cout << "a" << count << " = ";
+        cin >> a;
+        if (a % 5 == 0)
+        {
+            s1 += a;
+        }
+        if ((a % 2 != 0)&&(a < 0))
+        {
+            s2 += a;
+        }
+        cout << "a" << count << " = " << a << endl;
+        count++;
+        cout << "stop ? (Y/N)" << endl;
+        cin >> ch;
+    }
+    while (ch != 'Y' && ch != 'y');
+    cout << "S(a) = " << s1 << endl;
+    cout << "S(b) = " << s2 << endl;*/
+
+    // 42 (Николай) лаба
+
+    /*int min;
+    int array[30];
+    for (int i = 0; i < 30; i++)
+    {
+        cout << "a" << i << " = ";
+        cin >> array[i];
+    }
+    min = array[0] * array[15];
+    for (int i = 1; i < 15; i++)
+    {
+        if (array[i] * array[i+15] < min)
+        {
+            min = array[i] * array[i+15];
+        }
+    }
+    cout << "MIN = " << min << endl;*/
+
+    return 0;
+}
