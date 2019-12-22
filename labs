@@ -204,5 +204,55 @@ int main() {
     }
     cout << "MIN = " << min << endl;*/
 
+    void RandomAdd(double *ptr[], int nRow, int line){ // функция заполнения матрицы случайными числами и вывода ее на экран
+    for (int i = 0; i < nRow; i++)
+    {
+        for (int j = 0; j < line; j++)
+        {
+            ptr[i][j] = rand() % 201 - 100; // генерируем числа в числовом диапазоне от -100 до 100
+            cout << "[" << ptr[i][j] << "]" << " "; // выводим матрицу для наглядности
+        }
+        cout << endl;
+    }
+}
+
+void Elem(double *ptr[], int nRow) { // функция вывода на экран элементов главной диагонил матрицы
+    int j = 0;
+    for (int i = 0; i < nRow; i++)
+    {
+        cout << "Элемент главной диагонали матрицы " << ptr[i][j] << endl;
+        j++;
+    }
+}
+
+int main() {
+    int n,m;
+    cout << "n = ";
+    cin >> n;
+    cout << "m = ";
+    cin >> m;
+    double A[n][n]; // создаем матрицу А
+    double *pA[n]; // создаем массив указателей А
+    double B[m][m]; // создаем матрицу B
+    double *pB[m]; // создаем массив указателей B
+    for (int i = 0; i < n; i++) // заполняем массив указателей
+    {
+        pA[i] = A[i];
+    }
+    for (int i = 0; i < m; i++) // заполняем массив указателей
+    {
+        pB[i] = B[i];
+    }
+    cout << "Матрица А" << endl;
+    RandomAdd(pA, n, n); // вызываем функцию создания
+    cout << endl;
+    Elem(pA, n);
+    cout << endl;
+    cout << "Матрица B" << endl;
+    RandomAdd(pB, m, m); // вызываем функцию создания
+    cout << endl;
+    Elem(pB, m);
+    cout << endl;
     return 0;
+}
 }
